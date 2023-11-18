@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#app {
+  position: absolute;
+}
+
+canvas {
+  display: block;
+}
+
+.selector {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  box-sizing: border-box;
+  transition: transform 0.5s;
+}
+
+.selector.active {
+  transform: scale(1.1);
+}
+
+.row-selector {
+  background: linear-gradient(to right, rgba(255, 0, 0, 0.8), rgba(255, 255, 0, 0.8));
+}
+
+.column-selector {
+  background: linear-gradient(to bottom, rgba(0, 0, 255, 0.8), rgba(255, 255, 255, 0.8));
+}
+
+#shuffle-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #db3434;
+  color: #db4734;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#shuffle-button:hover {
+  background-color: #db3934;
+  color: #fff;
+}
